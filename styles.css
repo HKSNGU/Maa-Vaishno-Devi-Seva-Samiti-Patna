@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background.jpg");
+  background-size: cover;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+#head {
+  color: #fff;
+  text-align: center;
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-style: normal;
+}
+
+#head h1 {
+  margin-bottom: 30px;
+}
+
+#head hr {
+  width: 200px;
+  margin: 0 auto 20px;
+}
+
+#head .p1 {
+  margin-bottom: 20px;
+}
+
+#form {
+  background-color: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#form h3 {
+  color: #e3362c;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(227, 227, 227);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#input_btn,
+#generate_btn {
+  display: block;
+  width: 100%;
+  background: #e3362c;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+#download_btn {
+  display: none;
+  width: 100%;
+  background: #52c400;
+  color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+#e-card {
+  width: 80%;
+  background-color: #e31e25;
+  display: none;
+}
+
+#e-card .card_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#e-card .card_content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#e-card .card_content #user_img {
+  width: 100px;
+  height: 100px;
+}
+
+#e-card .card_content .user_details {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.user_container {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    padding: 10px;
+  }
+  #head {
+    margin-top: 50px;
+  }
+  #form {
+    padding: 20px;
+    width: 95%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #e-card {
+    width: 100%;
+  }
+  #e-card .card_content #user_img {
+    width: 50px;
+    height: 50px;
+  }
+  #e-card .card_content .user_details {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+}
