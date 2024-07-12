@@ -27,12 +27,6 @@ function ecard() {
   f.style.display = "none";
   g.style.display = "none";
 
-  // $("#download_btn").style.display = "block";
-  // $("#form_head").style.display = "none";
-  // $("#input_name").style.display = "none";
-  // $("#input_mob").style.display = "none";
-  // $("#input_img").style.display = "none";
-
   var name = document.getElementById("input_name").value;
   var mob = document.getElementById("input_mob").value;
   document.getElementById("user_full_name").innerHTML = name;
